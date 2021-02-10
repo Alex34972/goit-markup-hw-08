@@ -1,0 +1,56 @@
+.header-kontakt {
+  display: none;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: auto;
+    padding: 21px 0;
+  }
+  @media (min-width: $decktop) {
+    flex-direction: row;
+  }
+  &__subject {
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    align-items: center;
+    text-align: center;
+    transition: color $basik-transition;
+
+    @media (min-width: $decktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+  &__subject:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+    @media (min-width: $decktop) {
+      margin: 0;
+      margin-right: 30px;
+      padding: 0;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+
+    color: $dark-secondari-color;
+    fill: $dark-secondari-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+}
