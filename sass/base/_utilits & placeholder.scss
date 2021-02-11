@@ -1,4 +1,7 @@
 body {
+  @media (max-width: 479px) {
+    width: 480px;
+  }
   font-family: $basik-font;
   font-style: normal;
   font-weight: normal;

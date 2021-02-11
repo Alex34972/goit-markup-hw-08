@@ -1,5 +1,6 @@
 .foto {
   padding: 60px 0;
+ min-width: 100%;
   background: $secondary-beckground-color;
   @media (min-width: $decktop) {
     padding: 94px 0;

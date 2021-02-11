@@ -1,5 +1,5 @@
 .footer {
-  
+  display: flex;
   background-color: $sub-beckground-color;
   &__container {
     padding-top: 60px;
@@ -16,5 +16,7 @@
     display: flex;
     align-items: baseline;
   }
- 
+  @media screen and (min-width: $decktop) {
+    margin-bottom: 0;
+  }
 }
