@@ -9,6 +9,12 @@ body {
   color: #757575;
 }
 
+@media (max-width: 479px) {
+  body {
+    width: 480px;
+  }
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -673,6 +679,7 @@ h2 {
 
 .foto {
   padding: 60px 0;
+  min-width: 100%;
   background: #f5f4fa;
 }
 
@@ -873,6 +880,9 @@ h2 {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #2f303a;
 }
 
@@ -904,6 +914,12 @@ h2 {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-kontakt {
+    margin-bottom: 0;
   }
 }
 
@@ -1180,7 +1196,6 @@ h2 {
 
 .footer__social-net {
   padding: 0;
-  margin-bottom: 60px;
 }
 
 .social-net__link--inverse {
