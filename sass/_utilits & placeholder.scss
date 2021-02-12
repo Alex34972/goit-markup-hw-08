@@ -1,5 +1,5 @@
 body {
-width: 100%;
+  width: 100%;
 
   font-family: $basik-font;
   font-style: normal;
@@ -13,8 +13,9 @@ width: 100%;
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  width: 480px;
-
+  @media (min-width: $mobile) {
+    width: 480px;
+  }
   @media (min-width: $tablet) {
     width: 768px;
   }
