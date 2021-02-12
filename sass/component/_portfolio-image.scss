@@ -6,11 +6,12 @@
 
   &__part {
     display: block;
-    
+   max-width:370px;
     border: 1px solid #eeeeee;
     box-sizing: border-box;
+    @media screen and (min-width: $mobile){
     width: 450px;
-
+  }
     transition: box-shadow $basik-transition;
   }
   &__part:not(:last-child) {
