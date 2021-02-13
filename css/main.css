@@ -1217,7 +1217,7 @@ h2 {
   padding: 40px 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .form-modal {
     padding: 40px 5px;
   }
